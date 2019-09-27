@@ -1,0 +1,4 @@
+<?php 
+// thanh toán
+
+ ?>
