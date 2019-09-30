@@ -1,6 +1,7 @@
 <?php 
 require_once './commons/db.php';
-$query = "select * from products order by id desc limit 8";
+$keyword = $_GET['keyword'];
+$query = "select * from products where name like '%$keyword%' order by id desc";
 $products = executeQuery($query);
 // var_dump($products);die;
 
