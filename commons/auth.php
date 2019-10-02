@@ -1,11 +1,6 @@
 <?php
 session_start();
-// Role = 1 => member
-// Role = 100 => admin
-define('MEMBER_ROLE', 1);
-define('ADMIN_ROLE', 100);
-define('AUTH', 'AUTH');
-define('BASE_PATH', 'http://localhost/pt14312-web');
+require_once '../commons/utils.php';
 
 
 function checkAuth($role = MEMBER_ROLE){

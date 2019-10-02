@@ -1,7 +1,8 @@
 <?php 
 session_start();
 require_once '../commons/db.php';
-define('BASE_PATH', 'http://localhost/pt14312-web');
+require_once '../commons/utils.php';
+
 $email = getRequestValue('email', 2);
 $password = getRequestValue('password', 2);
 
