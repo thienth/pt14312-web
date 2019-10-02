@@ -1,3 +1,9 @@
+<?php 
+require_once '../commons/auth.php';
+checkAuth(100);
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>

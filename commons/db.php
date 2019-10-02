@@ -38,6 +38,18 @@ function executeQuery($sql, $getAll = true){
 	}
 }
 
+// $method = 1 => get | 2 => post
+// $name => name input
+function getRequestValue($name, $method = 1){
+	$value = '';
+	if($method == 1){
+		$value = isset($_GET[$name]) == true ? $_GET[$name] : "";
+	}else{
+		$value = isset($_POST[$name]) == true ? $_POST[$name] : "";
+	}
+	return $value;
+}
+
 
 
  ?>
